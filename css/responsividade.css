@@ -1,0 +1,117 @@
+@media screen and (max-width:790px) {
+
+    .btn-entrar button {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-flow: row wrap;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:730px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 2rem;
+    }
+
+    .btn-mobile {
+        display: block;
+        color: #fff;
+        padding: 10px;
+        font-size: 30pt;
+        font-weight: 400;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .pai-section {
+
+        padding-bottom: 100px;
+    }
+
+    .pai-section .tipos {
+        bottom: 10px;
+    }
+
+    .menu-mobile span {
+        color: #fff;
+        padding: 16px 10px;
+        font-size: 30pt;
+        font-weight: 400;
+        transition: 0.5s;
+    }
+    .menu-mobile span:hover {
+        color: red;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        list-style-type: none;
+        margin-top: 100px;
+        gap: 10px;
+    }
+
+    .menu-mobile ul li {
+        text-align: center;
+        color: #fff;
+    }
+
+    .menu-mobile ul li a {
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14pt;
+        transition: all 2s;
+    }
+
+    .menu-mobile ul li a:hover {
+        color: rgb(170, 31, 31);
+    }
+
+    .menu-mobile .btn-entrar button {
+        display:block;
+        text-align: center;
+        padding-bottom:10px;
+        text-align: center;
+        width: 100%;
+        line-height:40px;
+        margin-top: 10px;
+    }
+    .menu-mobile .btn-entrar button a{
+       font-size: 14pt;
+       text-align: center;
+       
+    }
+    .menu-mobile {
+        display: block;
+        background: linear-gradient(120deg, rgb(11, 45, 117), rgb(4, 40, 117));
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width:0;
+        height: 100vh;
+        z-index: 9999;
+        transition: all 1s;
+    }
+    .menu-mobile.open{
+        width: 70%;
+    }
+}

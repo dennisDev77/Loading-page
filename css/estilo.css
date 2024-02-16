@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family:'poppins'
+}
+/*Comecando com a nossa barra de navegacao
+*/
+
+.header{
+    position: sticky;
+    top:0;
+    background:linear-gradient(120deg, rgb(11, 45, 117), rgb(4, 40, 117)) ;
+    /* box-shadow: 0 0 15px rgb(3, 7, 44); */
+    display: flex;
+    justify-content:space-between;
+    flex-flow: row wrap;
+    padding:20px 4rem;
+    z-index: 100;
+}
+.logo{
+    cursor: pointer;
+}
+
+.menu-desktop{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.menu-desktop ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.menu-desktop ul a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14pt;
+    transition: 0.5s;
+}
+.menu-desktop ul a:hover{
+   color:rgb(170, 31, 31);
+}
+
+.btn-entrar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.btn-entrar button{
+    background-color:rgb(14, 62, 167);
+    border: none;
+    padding: 10px 40px;
+    border-radius:5px;
+    transition: all 0.8s;
+}
+.btn-entrar button:hover{
+    border:1px solid rgb(170, 31, 31);
+    background:transparent ;
+}
+
+.btn-entrar button a{
+   font-size: 10pt;
+   text-decoration: none;
+ display: inline-block;
+ color: #fff;
+ font-family: 'poppins';
+}
+
+/* Criando o menu mobile */
+.btn-mobile{
+    display:none;
+}
+
+.menu-mobile{
+    display: none;
+}
+/*Terminando com a nossa barra de navegacao
+*/
+
+/*Formatando o nosso headline*/
+
+.pai-section{
+    padding: 40px 4rem;
+    position: relative;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    }
+
+    .flex{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+    .box-top{
+    flex:40%;
+    }
+    .texto-do-topo{
+        padding-top:20px;
+        text-align: justify;
+        color: #fff;
+    }
+    .texto-do-topo h2{
+        padding-bottom:10px;
+        color:#fff;
+        font-weight:900;
+        transition:all 0.9s;
+        font-size: 36pt;
+        font-family:'poppins'
+    }
+    .texto-do-topo p{
+        font-size: 12pt;
+    }
+    .img-do-top{
+        text-align: center;
+        transition: all 0.9s;
+    }
+    .img-do-top img{
+        width: 262px;
+        position: relative;
+        animation: flutuar 1s ease-in-out alternate infinite
+    }
+
+    .pai-section .tipos{
+        position: absolute;
+        bottom:50px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .pai-section .centraliza{
+        display: flex;
+        flex-flow:row wrap ;
+        justify-content: center;
+    }
+    .pai-section .tipos img{
+        width:40px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .pai-section .tipos img:hover{
+        transform: scale(1.08);
+        transform: translateY(-15px);
+        transform: rotate(-30deg);
+    }
+    
+    /* Criando animacao para a imagem */
+    @keyframes flutuar{
+        0%{
+            top:0;
+        }
+        100%{
+            top:10px;
+        }
+    }
+
+    .pai-section.cor{
+        background:linear-gradient(120deg, rgb(11, 45, 117), rgb(4, 40, 117)) ;
+    } 
+
+    .redes{
+        display: flex;
+        gap: 20px;
+        padding: 14px 10px;
+    }
+
+    .redes span{
+        background:#fff;
+        font-size:30pt;
+        padding: 10px;
+        border-radius: 50px;
+        color:rgb(14, 62, 167);
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    .redes span:hover{
+    transform: scale(1.05);
+    transform: translateY(-10px);
+    
+    }
+
+    /*Terminando com o nosso headline*/
